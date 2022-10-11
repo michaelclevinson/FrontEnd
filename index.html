@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Relative Address</title>
+        <style>
+            body{
+                margin: 20px auto;
+                border: 1px solid black;
+                padding: 15px;
+                width: 778px;
+                height: 300px;
+            }
+            h2{
+                margin-left: 20px;
+            }
+            a{
+                margin-left: 9px;
+                padding: 10px 25px 10px;
+                color: white;
+                background-color: rgba(0, 106, 255, 0.617);
+                text-decoration: none;
+                border-radius: 5px;
+            }
+            #navbar{
+                margin-left: 15px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+            #fix{
+                background-color:rgb(97, 97, 97);
+            }
+            #name{
+                padding: 0px 5px 0px;
+                border: 1px solid red;
+                color: white;
+                background-color: red;
+            }
+            #page{
+                background-color:black;
+                color: white;
+                padding: 1px 5px 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><span id="page">Page</span><span id="name">Index</span></h1>
+        <h2>. Absolute Address <sub><small>(Not work any pc)</small></sub></h2>
+        <div id="navbar">
+            <a id="fix" href="#">Index Page</a>
+            <a href="/Folder A/a.html">Page a</a>
+            <a href="/Folder A/b.html">Page b</a>
+            <a href="/Folder A/Folder B/f.html">Page f</a>
+            <a href="/Folder C/d.html">Page d</a>
+            <a href="/Folder C/e.html">Page e</a>
+            <a href="/Folder C/Folder D/Folder G/p.html">Page p</a>
+        </div>
+        <h2>. Relative Address <sub><small>(Active)</small></sub></h2>
+        <div id="navbar">
+            <a id="fix" href="#">Index Page</a>
+            <a href="./Folder A/a.html">Page a</a>
+            <a href="./Folder A/b.html">Page b</a>
+            <a href="./Folder A/Folder B/f.html">Page f</a>
+            <a href="./Folder C/d.html">Page d</a>
+            <a href="./Folder C/e.html">Page e</a>
+            <a href="./Folder C/Folder D/Folder G/p.html">Page p</a>
+        </div>
+    </body>
+</html>
